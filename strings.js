@@ -55,3 +55,26 @@ console.log(replacedString);
 
 
 
+//declaring template string variables
+let title = "Ramayana";
+let author = "Valmiki";
+let likes = 1000000000;
+
+//string concatination way
+let result = "The book called " + title + " by " + author + " got " + likes + " likes";
+
+//template string way
+let result1 = `The book called ${title} by ${author} got ${likes} likes`;
+
+console.log(result);
+console.log(result1);
+
+
+//creating html template
+let html = `
+    <h1>${title}</h1>
+    <p>${author}</p>
+    <p>${likes}</p>
+
+`;
+console.log(html);
